@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Filosofía y Exceso de Información</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #F0F4F4, #F0F4F4);
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contenedor-problematica {
+    display: flex;          
+    align-items: flex-start; 
+    gap: 25px;              
+    margin-top: 20px;
+}
+
+.imagen-texto {
+    width: 500px;          
+    height: auto;        
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.texto-contenido {
+    flex: 1;                
+    line-height: 1.6;      
+    text-align: justify;    
+}
+
+@media (max-width: 768px) {
+    .contenedor-problematica {
+        flex-direction: column;
+    }
+    .imagen-texto {
+        width: 100%;
+    }
+}
+    header {
+      background-color: rgba(105, 99, 99, 0.6);
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #5f0163;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav button {
+      background-color: #74476e;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: transform 0.2s;
+    }
+
+    nav button:hover {
+      transform: scale(1.1);
+      background-color: #c300ff;
+      color: #fff;
+    }
+
+    section {
+      padding: 20px;
+      display: none;
+      animation: fadeIn 1s;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .interactive {
+      background-color: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .quiz-question {
+      margin: 10px 0;
+    }
+
+    .quiz-option {
+      background-color: #5120c4;
+      color: #fff;
+      padding: 8px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .quiz-option:hover {
+      background-color: #6d228b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>El Exceso de Información</h1>
+    <p>Reflexión sobre cómo la sobrecarga informativa afecta la percepción y el pensamiento crítico de los jóvenes.</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('problematica')">Problemática</button>
+    <button onclick="showSection('impacto')">Impacto</button>
+    <button onclick="showSection('interactivo')">Interactivo</button>
+  </nav>
+
+  <section id="problematica" class="active">
+    <h2>La Problemática</h2>
+    
+    <div class="contenedor-problematica">
+        <img src="image4.jpeg" alt="Imagen 4" class="imagen-texto">
+        
+        <div class="texto-contenido">
+            <p>Vivimos en una era donde la información fluye de manera constante y abrumadora. Los jóvenes, expuestos a redes sociales, noticias y contenidos digitales, enfrentan el reto de distinguir lo esencial de lo superficial, es decir, Los jóvenes consumen datos de la misma forma que hacen scroll: rápido y sin masticar. <br> Se genera una falsa sensación de sabiduría. El joven siente que "sabe" de geopolítica, de salud mental y de física porque vio tres videos de 60 segundos. Sin embargo, no hay "digestión intelectual". El conocimiento real requiere tiempo, silencio y la capacidad de conectar un dato con otro. El exceso de información, paradójicamente, crea una nueva forma de ignorancia: <b>la ignorancia ilustrada</b> (No se trata de la falta de acceso a la información (la ignorancia clásica), sino de un estado donde el individuo posee una enorme cantidad de datos, noticias y referencias, pero carece de la estructura mental para comprenderlos, conectarlos o criticarlos. Es, en esencia, saber mucho de todo sin entender el "porqué" de nada.) <br> Esto afecta la percepción del "yo". Los jóvenes empiezan a percibir sus propios deseos y opiniones a través del filtro de lo que es tendencia. La capacidad crítica se debilita porque el criterio propio es reemplazado por el <b>criterio del algoritmo</b>. Si la "verdad" es lo que tiene más reproducciones, lo esencial se vuelve invisible frente a lo popular. <br> Extender esta idea nos lleva a concluir que el verdadero desafío para las nuevas generaciones no es aprender, sino <b>aprender a ignorar</b>. <br>La libertad moderna no radica en el acceso a la información (que ya es total), sino en la capacidad de cerrar la pestaña, apagar la pantalla y elegir qué pequeñas piezas de realidad merecen ocupar un lugar en nuestro pensamiento crítico. </p>
+        </div>
+    </div>
+    
+  </section>
+
+<section id="impacto" style="max-width: 1100px; margin: 0 auto; font-family: sans-serif; padding: 20px;">
+  <h2 style="text-align: center; margin-bottom: 30px;">Impacto en la Percepción y el Pensamiento Crítico</h2>
+  
+  <div style="display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap;">
+    
+    <div style="flex: 1; min-width: 350px;">
+      <p style="margin-top: 0; line-height: 1.7; text-align: justify;">
+        El exceso de información puede generar confusión, dispersión y una percepción fragmentada de la realidad. La capacidad crítica se ve debilitada cuando no se filtra ni se reflexiona sobre lo que se consume.
+        <br><br> 
+        El impacto de esta saturación no solo reside en la fatiga mental, sino en lo que podríamos llamar la <b>erosión del "yo" pensante</b>. Cuando la realidad se percibe de forma fragmentada, el individuo pierde la capacidad de construir una narrativa coherente sobre el mundo, quedando a merced de estímulos externos que dictan su agenda mental. 
+        <br><br>
+        El núcleo del problema es que el exceso de información transmuta la libertad de elección en una esclavitud de reacción. Al no filtrar el contenido, el joven deja de ser un sujeto activo que busca conocimiento para convertirse en un objeto pasivo que recibe impactos. 
+        <br><br>
+        Si la realidad se percibe en pedazos (un titular aquí, un video allá), se pierde la noción de causalidad. Sin reflexión, los eventos parecen ocurrir en el vacío, sin historia ni consecuencias. Esto impide que el joven desarrolle una postura política, ética o social sólida, ya que sus "opiniones" son tan efímeras como el último post en su <b>Facebook</b>.
+        <br><br>
+        En definitiva, el impacto final es la <b>sustitución del criterio propio por el consenso digital.</b> La debilidad crítica permite que lo esencial sea sepultado por lo urgente y lo ruidoso, transformando a una generación potencialmente informada en una generación profundamente desorientada.
+      </p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 20px; flex-shrink: 0;">
+      <img src="image3.jpeg" alt="imagen 3" width="400" height="250" style="border-radius: 15px; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <img src="image1.jpeg" alt="imagen 1" width="400" height="250" style="border-radius: 15px; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    </div>
+    
+  </div>
+</section>
+
+  <section id="interactivo">
+    <h2>Actividad Interactiva</h2>
+
+    <div class="interactive">
+        <p class="quiz-question">¿Qué efecto tiene la sobrecarga de información en los jóvenes?</p>
+        <div class="quiz-option" onclick="verifyAnswer(true, 'res1')">Debilita su pensamiento crítico</div>
+        <div class="quiz-option" onclick="verifyAnswer(false, 'res1')">Lo fortalece automáticamente</div>
+        <p id="res1"></p>
+    </div>
+
+    <div class="interactive">
+        <p class="quiz-question">¿Cuál es la principal característica de la 'ignorancia ilustrada' en la era digital?</p>
+        <div class="quiz-option" onclick="verifyAnswer(true, 'res2')">Poseer abundantes datos sin ninguna estructura para comprenderlos.</div>
+        <div class="quiz-option" onclick="verifyAnswer(false, 'res2')">La falta total de acceso a fuentes de información</div>
+        <p id="res2"></p>
+    </div>
+
+    <div class="interactive">
+        <p class="quiz-question">Según la perspectiva filosófica discutida, ¿cómo afecta el algoritmo de las redes sociales a la capacidad crítica?</p>
+        <div class="quiz-option" onclick="verifyAnswer(false, 'res3')">Fomenta el choque con ideas opuestas, obligando a cuestionar sus propios sesgos.</div>
+        <div class="quiz-option" onclick="verifyAnswer(true, 'res3')">Crea cámaras de eco que solo confirman las creencias del usuario debilitando el cuestionamiento.</div>
+        <p id="res3"></p>
+    </div>
+
+    <div class="interactive">
+        <p class="quiz-question">¿Qué diferencia fundamental existe entre 'información' y 'conocimiento'?</p>
+        <div class="quiz-option" onclick="verifyAnswer(true, 'res4')">El conocimiento requiere de un proceso de digestión y reflexión de los datos con su debido contexto.</div>
+        <div class="quiz-option" onclick="verifyAnswer(false, 'res4')">La información siempre es verdadera mientras que el conocimiento es subjetivo.</div>
+        <p id="res4"></p>
+    </div>
+
+    <div class="interactive">
+        <p class="quiz-question">En el contexto del exceso de información, ¿qué significa que la percepción de la realidad se vuelve 'plana'?</p>
+        <div class="quiz-option" onclick="verifyAnswer(false, 'res5')">Que los jóvenes pierden el interés por cualquier tipo de contenido digital.</div>
+        <div class="quiz-option" onclick="verifyAnswer(true, 'res5')">Que no existe una jerarquía de importancia, dándole el mismo peso a un meme que a una noticia trascendental</div>
+        <p id="res5"></p>
+    </div>
+
+    <script>
+        // Una sola función para todas las preguntas
+        function verifyAnswer(isCorrect, targetId) {
+            const resultElement = document.getElementById(targetId);
+            
+            if (isCorrect) {
+                resultElement.textContent = "¡Correcto! Has filtrado la información con éxito.";
+                resultElement.style.color = "#00ff7f";
+            } else {
+                resultElement.textContent = "No exactamente. Reflexiona sobre cómo el exceso nubla el juicio.";
+                resultElement.style.color = "#ff4500";
+            }
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</section>
+<footer style="background-color: rgba(105, 99, 99, 0.6); color: #353535; padding: 40px 20px; text-align: center; border-top: 1px solid #333; margin-top: 50px;">
+    <div style="max-width: 800px; margin: auto;">
+        <p style="font-style: italic; font-size: 1.1em; color: #3f3f3f; margin-bottom: 20px;">
+            "La duda es el principio de la sabiduría." — Aristóteles
+        </p>
+        
+
+        <p style="font-size: 0.9em;">
+            &copy; 2026 El Exceso de Información. By. Juan Diego Villada e Isabella Forero Montes
+        </p>
+        
+        <p style="font-size: 0.8em; margin-top: 10px;">
+            Colombia.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
